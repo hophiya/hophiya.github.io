@@ -60,6 +60,9 @@
       <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -80,6 +83,10 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-首页"><a href="/" rel="section"><i class="fas fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-归档"><a href="/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-标签"><a href="/tags/" rel="section"><i class="fas fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-分类"><a href="/categories/" rel="section"><i class="fas fa-folder-open fa-fw"></i>分类</a></li><li class="menu-item menu-item-友链"><a href="/link/" rel="section"><i class="fas fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-简历"><a href="/html/resume/resume.htm" rel="section"><i class="fas fa-file-user fa-fw"></i>简历</a></li>
+  </ul>
+</nav>
 
 
 
@@ -239,7 +246,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-12-17 01:07:45 / Modified: 10:10:42" itemprop="dateCreated datePublished" datetime="2022-12-17T01:07:45+08:00">2022-12-17</time>
+      <time title="Created: 2022-12-17 01:07:45 / Modified: 23:25:36" itemprop="dateCreated datePublished" datetime="2022-12-17T01:07:45+08:00">2022-12-17</time>
     </span>
 
   
@@ -330,11 +337,29 @@
 <p>“页面名称”如果不填默认在post 下</p>
 <h3 id="编辑博文"><a href="#编辑博文" class="headerlink" title="编辑博文"></a>编辑博文</h3><p>文本编辑器打开博文，markdown格式，比如typora</p>
 <h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>如果暂时不想发布，写草稿，并进行本地预览：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft test</span><br><span class="line">hexo server --draft</span><br></pre></td></tr></table></figure>
+<p>如果准备发布草稿：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish test</span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义页面"><a href="#自定义页面" class="headerlink" title="自定义页面"></a>自定义页面</h2><h3 id="新建相关文件夹"><a href="#新建相关文件夹" class="headerlink" title="新建相关文件夹"></a>新建相关文件夹</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir source/html</span><br></pre></td></tr></table></figure>
+<p>在 blog 的源文件夹下找到 source 文件夹，在该文件夹下新建一个文件夹用来储存后继需要部署的 html 文件。该文件夹下可以新建子文件夹，方便存放 css、js文件。</p>
+<h3 id="关闭渲染"><a href="#关闭渲染" class="headerlink" title="关闭渲染"></a>关闭渲染</h3><p>自定义的 html 文件需要跳过渲染，否则会像文章页、标签页一样，无法自己编辑格式：<br>在 config.yml 文件里（注意是Hexo本身自带的config.yml，不是主题带的config.yml）找到</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">skip_render:                #跳过指定渲染，可用glob来匹配路径</span><br></pre></td></tr></table></figure>
+<p>在后面添加文件或文件夹路径即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- &quot;html/**&quot;               #跳过html文件夹下所有子文件夹和文件的渲染</span><br></pre></td></tr></table></figure>
+<p>记得加’-‘；具体可参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_58068682/article/details/116611715">Chak Aciano的文章</a></p>
+<h3 id="添加链接至首页"><a href="#添加链接至首页" class="headerlink" title="添加链接至首页"></a>添加链接至首页</h3><p>在 _config.next.yml 文件下（即自己安装的主题的config文件）找到 menu ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">   首页: / || fas fa-home</span><br><span class="line">   归档: /archives/ || fas fa-archive</span><br><span class="line">   标签: /tags/ || fas fa-tags</span><br><span class="line">   分类: /categories/ || fas fa-folder-open</span><br><span class="line">   #清单||fas fa-list:</span><br><span class="line">     #音乐: /music/ || fas fa-music</span><br><span class="line">     #电影: /movies/ || fas fa-video</span><br><span class="line">   友链: /link/ || fas fa-link</span><br><span class="line">   #关于: /about/ || fas fa-heart</span><br><span class="line">   简历: /html/resume/resume.htm || fas fa-file-user</span><br></pre></td></tr></table></figure>
+
+
 <p>本文部署过程参考： </p>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo官方手册</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20463581/answer/2492289487">如何搭建个人独立博客？</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/745eacc56227">Github Pages搭建个人博客(最新版)</a></p>
 <p><a target="_blank" rel="noopener" href="http://home.ustc.edu.cn/~liujunyan/blog/hexo-next-theme-config/#hexo-%E5%AE%89%E8%A3%85">Hexo 博客 NexT 主题的安装使用</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/525469921">Hexo创建自定义页面</a></p>
 <p>一并感谢</p>
 
       
