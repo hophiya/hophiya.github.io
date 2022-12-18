@@ -152,16 +152,6 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-      <div class="site-state-item site-state-categories">
-          <a href="/categories/">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-          <a href="/tags/">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
   </nav>
 </div>
 
@@ -387,16 +377,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-12-18 12:05:23" itemprop="dateModified" datetime="2022-12-18T12:05:23+08:00">2022-12-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%88%86%E7%B1%BB%E4%B8%80/" itemprop="url" rel="index"><span itemprop="name">分类一</span></a>
-        </span>
+      <time title="Modified: 2022-12-18 20:51:13" itemprop="dateModified" datetime="2022-12-18T20:51:13+08:00">2022-12-18</time>
     </span>
 
   
@@ -561,7 +542,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">vim source/categories/index.md</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: 分类一</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">type: categories</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">title: 分类二</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>给文章添加”分类”属性</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类一</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <h3 id="添加标签"><a href="#添加标签" class="headerlink" title="添加标签"></a>添加标签</h3><p>生成标签目录</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
@@ -573,10 +554,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">tags:</span><br><span class="line">  - 标签一</span><br><span class="line">  - 标签二</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 
-
-
-
-<p>本文部署过程参考： </p>
+<h3 id="添加评论"><a href="#添加评论" class="headerlink" title="添加评论"></a>添加评论</h3><h3 id="添加浏览量"><a href="#添加浏览量" class="headerlink" title="添加浏览量"></a>添加浏览量</h3><p>本文部署过程参考： </p>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo官方手册</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20463581/answer/2492289487">如何搭建个人独立博客？</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/745eacc56227">Github Pages搭建个人博客(最新版)</a></p>
@@ -584,7 +562,8 @@
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/525469921">Hexo创建自定义页面</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-symbols-count-time">博客字数以及阅读时间估计插件</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/98ce38df7f87">Hexo博客：二、添加分类及标签</a></p>
-<p>一并感谢</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/47405173/answer/2348712269?utm_id=0">github+hexo搭建博客怎么增加评论和浏览量功能？</a></p>
+<p><a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">valine</a><br>一并感谢</p>
 
       
     </div>
