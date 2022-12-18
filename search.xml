@@ -157,6 +157,27 @@
 <h3 id="博文添加更新时间"><a href="#博文添加更新时间" class="headerlink" title="博文添加更新时间"></a>博文添加更新时间</h3><p>更新模板：<em>scaffolds&#x2F;post.md</em></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">update: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<h3 id="添加分类"><a href="#添加分类" class="headerlink" title="添加分类"></a>添加分类</h3><p>生成分类目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>在categories目录中有一个index.md文件，在文件中添加type: categories<br>在categories目录中有一个index.md文件，多个分类可以复制多份</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim source/categories/index.md</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: 分类一</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">type: categories</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">title: 分类二</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>给文章添加”分类”属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加标签"><a href="#添加标签" class="headerlink" title="添加标签"></a>添加标签</h3><p>生成标签目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>在tags目录中有一个index.md文件，在文件中添加type: tags</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim source/tags/index.md</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: 标签一</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">type: tags</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: 标签二</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">type: tags</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>给文章添加”标签”属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">tags:</span><br><span class="line">  - 标签一</span><br><span class="line">  - 标签二</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+
+
 
 <p>本文部署过程参考： </p>
 <p><a href="https://hexo.io/zh-cn/docs/">hexo官方手册</a></p>
@@ -165,17 +186,25 @@
 <p><a href="http://home.ustc.edu.cn/~liujunyan/blog/hexo-next-theme-config/#hexo-%E5%AE%89%E8%A3%85">Hexo 博客 NexT 主题的安装使用</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/525469921">Hexo创建自定义页面</a></p>
 <p><a href="https://github.com/theme-next/hexo-symbols-count-time">博客字数以及阅读时间估计插件</a></p>
+<p><a href="https://www.jianshu.com/p/98ce38df7f87">Hexo博客：二、添加分类及标签</a></p>
 <p>一并感谢</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>开篇语</title>
-    <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
-    <content><![CDATA[]]></content>
+      <categories>
+        <category>分类一</category>
+      </categories>
+      <tags>
+        <tag>标签一</tag>
+        <tag>标签二</tag>
+      </tags>
   </entry>
   <entry>
     <title>凡尘拾萃</title>
     <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>开篇语</title>
+    <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
