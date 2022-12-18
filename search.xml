@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>My First Blog Post</title>
-    <url>/2022/12/16/My-First-Blog-Post/</url>
-    <content><![CDATA[<p>this is my first blog<br>so cool<br>by hophiya</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/12/16/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -22,6 +16,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>My First Blog Post</title>
+    <url>/2022/12/16/My-First-Blog-Post/</url>
+    <content><![CDATA[<p>this is my first blog<br>so cool<br>by hophiya</p>
 ]]></content>
   </entry>
   <entry>
@@ -152,6 +152,10 @@
 
 <h3 id="同步生成文件夹"><a href="#同步生成文件夹" class="headerlink" title="同步生成文件夹"></a>同步生成文件夹</h3><p>将每篇博客对应生成一个文件夹目录（方便插入图片等附件）：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="博文添加更新时间"><a href="#博文添加更新时间" class="headerlink" title="博文添加更新时间"></a>博文添加更新时间</h3><p>更新模板：<em>scaffolds&#x2F;post.md</em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">update: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 <p>本文部署过程参考： </p>
