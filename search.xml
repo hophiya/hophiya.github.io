@@ -176,7 +176,23 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">tags:</span><br><span class="line">  - 标签一</span><br><span class="line">  - 标签二</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="添加评论"><a href="#添加评论" class="headerlink" title="添加评论"></a>添加评论</h3><h3 id="添加浏览量"><a href="#添加浏览量" class="headerlink" title="添加浏览量"></a>添加浏览量</h3><p>本文部署过程参考： </p>
+<h3 id="打开网页版编辑"><a href="#打开网页版编辑" class="headerlink" title="打开网页版编辑"></a>打开网页版编辑</h3><p>1.<br><a href="https://github1s.com/hophiya/hophiya.github.io">网页vscode打开</a></p>
+<p>但是这种方式打开的 VS Code 只能用于阅读源码不支持编辑功能，并且不能添加扩展</p>
+<ol start="2">
+<li>github.dev方式<br>Opening the github.dev editor<br>You can open any GitHub repository in github.dev in either of the following ways:</li>
+</ol>
+<ul>
+<li><p>To open the repository in the same browser tab, press . while browsing any repository or pull request on GitHub.</p>
+</li>
+<li><p>To open the repository in a new browser tab, press &gt;.</p>
+</li>
+<li><p>Change the URL from “github.com” to “github.dev”.</p>
+</li>
+<li><p>When viewing a file, use the dropdown menu next to  and select Open in github.dev.</p>
+</li>
+</ul>
+<h3 id="添加评论"><a href="#添加评论" class="headerlink" title="添加评论"></a>添加评论</h3><h3 id="添加浏览量"><a href="#添加浏览量" class="headerlink" title="添加浏览量"></a>添加浏览量</h3><p>参考：<br><a href="https://www.jianshu.com/p/98ce38df7f87">Hexo博客：二、添加分类及标签</a></p>
+<p>本文部署过程参考： </p>
 <p><a href="https://hexo.io/zh-cn/docs/">hexo官方手册</a></p>
 <p><a href="https://www.zhihu.com/question/20463581/answer/2492289487">如何搭建个人独立博客？</a></p>
 <p><a href="https://www.jianshu.com/p/745eacc56227">Github Pages搭建个人博客(最新版)</a></p>
@@ -185,7 +201,10 @@
 <p><a href="https://github.com/theme-next/hexo-symbols-count-time">博客字数以及阅读时间估计插件</a></p>
 <p><a href="https://www.jianshu.com/p/98ce38df7f87">Hexo博客：二、添加分类及标签</a></p>
 <p><a href="https://www.zhihu.com/question/47405173/answer/2348712269?utm_id=0">github+hexo搭建博客怎么增加评论和浏览量功能？</a></p>
-<p><a href="https://valine.js.org/quickstart.html">valine</a><br>一并感谢</p>
+<p><a href="https://valine.js.org/quickstart.html">valine</a></p>
+<p><a href="https://sspai.com/post/68891">在网页端使用 VS Code 编辑 GitHub 项目——github.dev</a></p>
+<p><a href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor">The github.dev web-based editor</a></p>
+<p>一并感谢</p>
 ]]></content>
       <categories>
         <category>技术杂谈</category>
@@ -197,6 +216,11 @@
       </tags>
   </entry>
   <entry>
+    <title>凡尘拾萃</title>
+    <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>开篇语</title>
     <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
     <content><![CDATA[]]></content>
@@ -206,10 +230,5 @@
       <tags>
         <tag>闲谈</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>凡尘拾萃</title>
-    <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
