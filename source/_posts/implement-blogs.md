@@ -535,7 +535,13 @@ git fetch origin source
 
 合并到远程仓库：
 ```
+git status
+git add .
+git merge source
+git status
+git commit -m "add 常用命令"
 git push origin source
+
 ```
 
 *end*
