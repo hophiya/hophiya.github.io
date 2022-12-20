@@ -220,7 +220,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch -a</span><br><span class="line">* source(显示为当前分支)</span><br><span class="line">git fetch origin source</span><br></pre></td></tr></table></figure>
 
 <p>合并到远程仓库：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push origin source</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git merge source</span><br><span class="line">git status</span><br><span class="line">git commit -m &quot;add 常用命令&quot;</span><br><span class="line">git push origin source</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p><em>end</em></p>
 <p>本文部署过程参考： </p>
@@ -249,6 +249,11 @@
       </tags>
   </entry>
   <entry>
+    <title>凡尘拾萃</title>
+    <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>开篇语</title>
     <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
     <content><![CDATA[]]></content>
@@ -258,10 +263,5 @@
       <tags>
         <tag>闲谈</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>凡尘拾萃</title>
-    <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
