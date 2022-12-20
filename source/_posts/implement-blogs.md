@@ -464,8 +464,81 @@ You can open any GitHub repository in github.dev in either of the following ways
 
 ### 源码单独保存
 1. 单独建立分支，参考：[使用git分支保存hexo博客源码到github](https://zhuanlan.zhihu.com/p/71544809)
+
+将本地hexo目录与远程仓库关联
+进入到本地hexo工程目录，也就是我们通常执行hexo new post等命令的目录，执行如下操作：
+
+```
+git remote add origin https://github.com/hophiya/hophiya.github.io.git
+git add .
+git commit -m 'hexo source post'
+git push origin source
+```
+
+因为我们只需要保留博客源码，其他无关的文件并不希望推送，需要确保配好了.gitignore文件
+```
+cat .gitignore
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml%
+```
+
+删除public等文件（可选）
+因为source分支是从master分支新建的，初始代码实际就是master的拷贝，因而master中已有的public等deploy生成的文件也会一起带过来，这些都不算是博客源文件，如果你也觉着source分支还存着这些有些别扭，就可以先在本地把它删掉，然后执行：
+
+git add .
+git commit -m 'DEL: public things which only for deploy'
+git push origin source
+
+
 2. Hexo 项目编译生成静态页面，部署到 gh-pages
 
+
+### 常用命令汇总
+至此基本完成部署，后续主要写博客及代码部署，常用命令如下：
+
+新建博文:
+```
+hexo new "文章题目"
+```
+
+给文章添加分类和标签:
+```
+---
+title: 文章标题
+date: 2022-12-18 00:19:23
+categories: 分类
+tags:
+  - 标签一
+  - 标签二
+---
+```
+
+部署博客：
+```
+$ hexo clean
+
+$ hexo deploy
+```
+
+合并原文件：
+```
+git branch -a
+* source(显示为当前分支)
+git fetch origin source
+```
+
+合并到远程仓库：
+```
+git push origin source
+```
+
+*end*
 
 
 本文部署过程参考： 
