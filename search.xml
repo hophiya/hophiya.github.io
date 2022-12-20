@@ -207,6 +207,12 @@
 <li>Hexo 项目编译生成静态页面，部署到 gh-pages</li>
 </ol>
 <h3 id="常用命令汇总"><a href="#常用命令汇总" class="headerlink" title="常用命令汇总"></a>常用命令汇总</h3><p>至此基本完成部署，后续主要写博客及代码部署，常用命令如下：</p>
+<p>新建博文:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;文章题目&quot;</span><br></pre></td></tr></table></figure>
+
+<p>给文章添加分类和标签:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">tags:</span><br><span class="line">  - 标签一</span><br><span class="line">  - 标签二</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
 <p>部署博客：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
@@ -243,11 +249,6 @@
       </tags>
   </entry>
   <entry>
-    <title>凡尘拾萃</title>
-    <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>开篇语</title>
     <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
     <content><![CDATA[]]></content>
@@ -257,5 +258,10 @@
       <tags>
         <tag>闲谈</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>凡尘拾萃</title>
+    <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
