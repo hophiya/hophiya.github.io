@@ -59,7 +59,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
 <h2 id="安装和配置-Hexo"><a href="#安装和配置-Hexo" class="headerlink" title="安装和配置 Hexo"></a>安装和配置 Hexo</h2><h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>在命令行工具中，执行以下命令来安装 Hexo ：</p>
 <p>初始化 Hexo 项目打开命令行工具并进入想要作为博客目录的父目录中，执行以下命令，初始化 Hexo 项目目录。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npx hexo init &lt;folder_name&gt;</span><br><span class="line"></span><br><span class="line">$ cd &lt;folder_name&gt;</span><br><span class="line"></span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npx hexo init &lt;folder_name&gt;</span><br><span class="line"></span><br><span class="line">到hexo目录下</span><br><span class="line">$ cd &lt;folder_name&gt;</span><br><span class="line"></span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>对 Hexo 项目进行基本配置Hexo 项目目录下的_config.yml文件是 Hexo 的站点配置文件，一些常规配置项都在此文件中进行配置。编辑该文件，我们来进行一些基础配置。修改站点名称修改站点配置文件的title配置项，例如修改为：title: Just Another Blog此时网站名称将修改为Just Another Blog。修改作者名称修改站点配置文件的author配置项，例如修改为：author: Ruka Kayamori此时网站作者将修改为Ruka Kayamori。启动本地 Hexo Server执行以下命令可以启动本地服务。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br><span class="line">$ hexo g</span><br><span class="line"></span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 <p>默认的本地访问地址是<a href="http://localhost:4000。">http://localhost:4000。</a></p>
@@ -152,8 +152,9 @@
 
 <h3 id="同步生成文件夹"><a href="#同步生成文件夹" class="headerlink" title="同步生成文件夹"></a>同步生成文件夹</h3><p>将每篇博客对应生成一个文件夹目录（方便插入图片等附件）：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
-
-
+<h3 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h3><p>安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-img --save</span><br></pre></td></tr></table></figure>
+<p>图片保存到博客同名文件夹中</p>
 <h3 id="博文添加更新时间"><a href="#博文添加更新时间" class="headerlink" title="博文添加更新时间"></a>博文添加更新时间</h3><p>更新模板：<em>scaffolds&#x2F;post.md</em></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">update: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -277,7 +278,7 @@
     <title>云数据库架构对比</title>
     <url>/2023/04/10/database/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9E%B6%E6%9E%84%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<p>TDSQL架构</p>
-<p><img src="/blog/hexo/data/image/TDSQL%E6%9E%B6%E6%9E%84%E5%9B%BE.jpeg" alt="1"></p>
+<p><img src="/database/TDSQL%E6%9E%B6%E6%9E%84%E5%9B%BE.jpeg" alt="a"></p>
 ]]></content>
       <categories>
         <category>技术杂谈</category>
