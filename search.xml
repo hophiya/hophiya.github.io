@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2023/01/04/2022%E6%80%BB%E7%BB%93/</url>
+    <title>2022记录</title>
+    <url>/2023/04/10/2022%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>01.01<br>《梅城》<br>腊月梅城天气新，白墙灰瓦醉流云。<br>清香渐放三江畔，半朵梅花天下闻。</p>
 <p>《大慈岩》<br>昔闻悬空寺，今上大慈岩。<br>殿立千云顶，雕浮万仞间。<br>山高佛面善，路陡客长攀。<br>回望归来路，霞光铺满天。</p>
 <p>2022-02-03<br>《浣纱溪-大奇山踏雪》<br>山下青松翠欲滴，山间深碧落琉璃，山头绿树水晶枝。<br>犹恋山中风景好，何辞长啸踏歌归。丰年瑞雪盼春回。<br>0305<br>《浣溪沙-西径山》<br>西径重来景色新，迎头玉练坠青云，竹间落日照双林。<br>再起东山名万古，同宗进士价千金，林间古道几黄昏。</p>
@@ -25,6 +25,12 @@
 <p>12.30<br>《阿里毕业》<br>男儿莫不爱江湖，踏马挥戈扩战图。<br>不见硝烟还见血，人生无处不江湖。</p>
 <p>《虞美人-阳康记》<br>三年抗疫未曾中，敌势忽难控。<br>攻城略地战八荒，我欲冲关决赛止八强。<br>水泥鼻后头昏胀，刀片鸡毛嗓。<br>人生难免一回阳，但愿无关生死只关康。</p>
 ]]></content>
+      <categories>
+        <category>凡尘拾萃</category>
+      </categories>
+      <tags>
+        <tag>诗词拾萃</tag>
+      </tags>
   </entry>
   <entry>
     <title>My First Blog Post</title>
@@ -259,6 +265,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/12/16/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>人间烟火</title>
     <url>/2022/12/18/%E5%87%A1%E5%B0%98%E6%8B%BE%E8%90%83/</url>
     <content><![CDATA[<p>人间烟火气，最抚凡人心</p>
@@ -280,24 +304,6 @@
       <tags>
         <tag>闲谈</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/12/16/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>GaussDB初识</title>
