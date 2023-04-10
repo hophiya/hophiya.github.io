@@ -217,7 +217,9 @@
 <h3 id="常用命令汇总"><a href="#常用命令汇总" class="headerlink" title="常用命令汇总"></a>常用命令汇总</h3><p>至此基本完成部署，后续主要写博客及代码部署，常用命令如下：</p>
 <p>新建博文:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new post -p dir/title</span><br></pre></td></tr></table></figure>
-<p>其中：<br>dir：子目录名称<br>titile：文章标题</p>
+<p>其中：<br>dir：子目录名称<br>titile：文章标题<br>如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n -p database/云数据库架构对比 &quot;云数据库架构对比&quot;</span><br><span class="line">hexo n -p database/GaussDB &quot;GaussDB初识&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>给文章添加分类和标签:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标题</span><br><span class="line">date: 2022-12-18 00:19:23</span><br><span class="line">categories: 分类</span><br><span class="line">tags:</span><br><span class="line">  - 标签一</span><br><span class="line">  - 标签二</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
@@ -296,6 +298,18 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>GaussDB初识</title>
+    <url>/2023/04/10/database/GaussDB/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术杂谈</category>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>database</tag>
+      </tags>
   </entry>
   <entry>
     <title>云数据库架构对比</title>
