@@ -310,9 +310,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2023-04-10 16:23:27 / Modified: 21:46:13" itemprop="dateCreated datePublished" datetime="2023-04-10T16:23:27+08:00">2023-04-10</time>
+      <time title="Created: 2023-04-10 16:23:27" itemprop="dateCreated datePublished" datetime="2023-04-10T16:23:27+08:00">2023-04-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-04-11 09:31:23" itemprop="dateModified" datetime="2023-04-11T09:31:23+08:00">2023-04-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -354,8 +360,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>TDSQL架构</p>
-<p><img src="https://pic4.zhimg.com/80/v2-cd54c655afb504acd4ab1d5d6175584f_1440w.webp" alt="a"></p>
-
+<img src="/.io//04/10/database/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9E%B6%E6%9E%84%E5%AF%B9%E6%AF%94/TDSQL%E6%9E%B6%E6%9E%84%E5%9B%BE.jpeg" class title="a">
       
     </div>
 
@@ -630,7 +635,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-10 21:35:07" itemprop="dateModified" datetime="2023-04-10T21:35:07+08:00">2023-04-10</time>
+      <time title="Modified: 2023-04-11 09:31:50" itemprop="dateModified" datetime="2023-04-11T09:31:50+08:00">2023-04-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -730,7 +735,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
 <h3 id="启用-NexT-主题"><a href="#启用-NexT-主题" class="headerlink" title="启用 NexT 主题"></a>启用 NexT 主题</h3><p>打开 Hexo 项目的站点配置文件，并修改theme配置项。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<h3 id="创建主题配置文件"><a href="#创建主题配置文件" class="headerlink" title="创建主题配置文件"></a>创建主题配置文件</h3><p>在 Hexo 项目根目录，创建一个名为_config.<theme_name>.yml的空文件。</p>
+<h3 id="创建主题配置文件"><a href="#创建主题配置文件" class="headerlink" title="创建主题配置文件"></a>创建主题配置文件</h3><p>在 Hexo 项目根目录，创建一个名为_config.<theme_name>.yml的空文件。</theme_name></p>
 <p>例如我们是 NexT 主题，那么就创建_config.next.yml文件。</p>
 <p>然后我们将 Hexo 项目根目录下的node_modules&#x2F;hexo-theme-next&#x2F;_config.yml文件中的全部内容拷贝到_config.next.yml文件中。</p>
 <p>后续我们将_config.next.yml文件称为主题配置文件，以区别站点配置文件。</p>
@@ -793,7 +798,7 @@
 <h3 id="同步生成文件夹"><a href="#同步生成文件夹" class="headerlink" title="同步生成文件夹"></a>同步生成文件夹</h3><p>将每篇博客对应生成一个文件夹目录（方便插入图片等附件）：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
 <h3 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h3><p>安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-img --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-img --save</span><br><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 <p>图片保存到博客同名文件夹中</p>
 <h3 id="博文添加更新时间"><a href="#博文添加更新时间" class="headerlink" title="博文添加更新时间"></a>博文添加更新时间</h3><p>更新模板：<em>scaffolds&#x2F;post.md</em></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">update: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
