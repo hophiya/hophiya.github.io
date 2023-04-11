@@ -25,17 +25,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>开篇语</title>
-    <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>凡尘拾萃</category>
-      </categories>
-      <tags>
-        <tag>闲谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>implement blogs</title>
     <url>/2022/12/17/implement-blogs/</url>
     <content><![CDATA[<p><strong>部署blog步骤</strong></p>
@@ -266,13 +255,24 @@
     <title>GaussDB初识</title>
     <url>/2023/04/10/database/GaussDB/</url>
     <content><![CDATA[<p>TDSQL架构</p>
-<img src="/.io//04/10/database/GaussDB/TDSQL%E6%9E%B6%E6%9E%84%E5%9B%BE.jpeg" class title="a">]]></content>
+<img src="/.io//04/10/database/GaussDB/TDSQL.jpeg" class title="a">]]></content>
       <categories>
         <category>技术杂谈</category>
         <category>数据库</category>
       </categories>
       <tags>
         <tag>database</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开篇语</title>
+    <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>凡尘拾萃</category>
+      </categories>
+      <tags>
+        <tag>闲谈</tag>
       </tags>
   </entry>
   <entry>
