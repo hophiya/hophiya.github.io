@@ -239,7 +239,7 @@
 <p><a href="https://sspai.com/post/68891">在网页端使用 VS Code 编辑 GitHub 项目——github.dev</a></p>
 <p><a href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor">The github.dev web-based editor</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/71544809">使用git分支保存hexo博客源码到github</a></p>
-<p><a href="https://www.jianshu.com/p/cafbaec21a2a">Hexo+GitHub搭建个人博客，实现云端编辑、一键发文</a><br><a href="https://www.mingdao.me/Hexo/create-post-under-subfolder/">Hexo新建文章时直接将页面放到子目录下</a></p>
+<p><a href="https://www.jianshu.com/p/cafbaec21a2a">Hexo+GitHub搭建个人博客，实现云端编辑、一键发文</a><br><a href="https://www.mingdao.me/Hexo/create-post-under-subfolder/">Hexo新建文章时直接将页面放到子目录下</a><br><a href="https://blog.csdn.net/Miracle_ps/article/details/114791335">Hexo 添加图片——不用插件，超简单</a></p>
 <p>一并感谢</p>
 ]]></content>
       <categories>
@@ -279,7 +279,7 @@
     <title>PolarDB架构</title>
     <url>/2023/04/11/database/PolarDB/</url>
     <content><![CDATA[<p>PolarDB架构</p>
-<p><img src="/.io//database/PolarDB/PolarDB-MySQL.png" alt="polardb"></p>
+<p><img src="/images/PolarDB-MySQL.png" alt="polardb"></p>
 ]]></content>
       <categories>
         <category>技术杂谈</category>
