@@ -266,7 +266,7 @@
     <title>GaussDB初识</title>
     <url>/2023/04/10/database/GaussDB/</url>
     <content><![CDATA[<p>TDSQL架构</p>
-<img src="/.io//04/10/database/GaussDB/TDSQL.jpeg" class title="a">]]></content>
+]]></content>
       <categories>
         <category>技术杂谈</category>
         <category>数据库</category>
@@ -280,19 +280,6 @@
     <url>/2023/04/11/database/PolarDB/</url>
     <content><![CDATA[<p>PolarDB架构</p>
 <p><img src="/images/PolarDB-MySQL.png" alt="polardb"></p>
-]]></content>
-      <categories>
-        <category>技术杂谈</category>
-        <category>数据库</category>
-      </categories>
-      <tags>
-        <tag>database</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>云数据库架构对比</title>
-    <url>/2023/04/10/database/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9E%B6%E6%9E%84%E5%AF%B9%E6%AF%94/</url>
-    <content><![CDATA[<p>TDSQL架构</p>
 ]]></content>
       <categories>
         <category>技术杂谈</category>
@@ -332,6 +319,225 @@
       </categories>
       <tags>
         <tag>诗词拾萃</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云数据库架构对比</title>
+    <url>/2023/04/10/database/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9E%B6%E6%9E%84%E5%AF%B9%E6%AF%94/</url>
+    <content><![CDATA[<h2 id="总概"><a href="#总概" class="headerlink" title="总概"></a>总概</h2><p>最近研究各云厂商的数据库架构和类型，并做了比对，整理如下</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>PolarDB</th>
+<th>GaussDB</th>
+<th>OceanBase</th>
+<th>TDSQL</th>
+<th>TiDB</th>
+<th>aurora</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">厂商</td>
+<td>阿里云</td>
+<td>华为云</td>
+<td>奥星贝斯</td>
+<td>腾讯云</td>
+<td>pincap</td>
+<td>aws</td>
+</tr>
+<tr>
+<td align="left">介绍</td>
+<td>阿里云原生数据库</td>
+<td>华为云原生数据库</td>
+<td>蚂蚁分布式数据库</td>
+<td>腾讯云原生数据库</td>
+<td>开源分布式数据库</td>
+<td>aws云原生数据库</td>
+</tr>
+<tr>
+<td align="left">产品系列</td>
+<td>PolarDB,PolarDB-X,PolarDB-O</td>
+<td>GaussDB(for MySQL),OpenGauss,DWS…</td>
+<td>OceanBase</td>
+<td>TDSQL,TDSQL-C</td>
+<td>TiDB</td>
+<td>aurora</td>
+</tr>
+<tr>
+<td align="left">share disk</td>
+<td>PolarDB</td>
+<td>GaussDB(for MySQL)</td>
+<td>-</td>
+<td>TDSQL-C</td>
+<td>-</td>
+<td>aurora</td>
+</tr>
+<tr>
+<td align="left">share nothing</td>
+<td>Polardb-X</td>
+<td>OpenGauss</td>
+<td>OceanBase</td>
+<td>TDSQL</td>
+<td>TiDB</td>
+<td>aurora</td>
+</tr>
+</tbody></table>
+<p><strong>云数据库比较</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>PolarDB</th>
+<th>GaussDB</th>
+<th>aurora</th>
+<th>TDSQL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">厂商</td>
+<td>阿里云</td>
+<td>华为云</td>
+<td>aws</td>
+<td>腾讯云</td>
+</tr>
+<tr>
+<td align="left">介绍</td>
+<td>阿里云原生数据库</td>
+<td>华为云原生数据库</td>
+<td>aws云原生数据库</td>
+<td>腾讯云原生数据库</td>
+</tr>
+<tr>
+<td align="left">产品系列</td>
+<td>PolarDB(for MySQL)</td>
+<td>GaussDB(for MySQL)</td>
+<td>aurora</td>
+<td>TDSQL-C MySQL</td>
+</tr>
+<tr>
+<td align="left">存算分离</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td align="left">share disk</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td align="left">只读扩展</td>
+<td>1-15</td>
+<td>1-15</td>
+<td>1-15</td>
+<td>1-15</td>
+</tr>
+<tr>
+<td align="left">兼容性</td>
+<td>MySQL8.0 5.7 5.6</td>
+<td>MySQL8.0</td>
+<td>MySQL8.0 5.7</td>
+<td>MySQL8.0 5.7</td>
+</tr>
+<tr>
+<td align="left">副本数量</td>
+<td>3副本强一致</td>
+<td>3副本强一致</td>
+<td>3副本强一致</td>
+<td>3副本强一致</td>
+</tr>
+<tr>
+<td align="left">集群容量</td>
+<td></td>
+<td>最大128TB</td>
+<td>最大128TB</td>
+<td>PB级</td>
+</tr>
+<tr>
+<td align="left">读写模式</td>
+<td>一写多读，多写多读</td>
+<td>一写多读</td>
+<td>一写多读</td>
+<td>一写多读</td>
+</tr>
+<tr>
+<td align="left">性能</td>
+<td></td>
+<td></td>
+<td></td>
+<td>单节点百万QPS</td>
+</tr>
+<tr>
+<td align="left">开源MySQL性能提升</td>
+<td>6倍</td>
+<td>7倍</td>
+<td>5倍</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">故障切换耗时</td>
+<td>5~10s</td>
+<td>秒级</td>
+<td>120s</td>
+<td>60s</td>
+</tr>
+<tr>
+<td align="left">官方链接</td>
+<td><a href="https://help.aliyun.com/document_detail/58764.html">PolarDB</a></td>
+<td><a href="https://support.huaweicloud.com/productdesc-gaussdb/gaussdb_01_0000.html">GaussDB</a></td>
+<td><a href="https://docs.aws.amazon.com/zh_cn/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html">aurora</a></td>
+<td><a href="https://cloud.tencent.com/document/product/1003/30489">TDSQL-C</a></td>
+</tr>
+</tbody></table>
+<p><strong>PolarDB架构</strong></p>
+<p><img src="/images/PolarDB-MySQL%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="PolarDB-MySQL"></p>
+<hr>
+<p><strong>GaussDB架构</strong><br><img src="/images/GaussDB-MySQL%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="GaussDB-MySQL"></p>
+<p>云数据库 GaussDB(for MySQL)整体架构自下向上分为三层。</p>
+<ul>
+<li>存储层： 基于华为DFV存储，提供分布式、强一致和高性能的存储能力，此层来保障数据的可靠性以及横向扩展能力，保证数据的可靠性不低于99.999999999%。DFV (Data Functions Virtualization)是华为提供的一套通过存储和计算分离的方式，构建以数据为中心的全栈数据服务架构的解决方案。</li>
+<li>存储抽象层 （Storage Abstraction Layer）：将原始数据库基于表文件的操作抽象为对应分布式存储，向下对接DFV，向上提供高效调度的数据库存储语义，是数据库高性能的核心。</li>
+<li>SQL解析层：与MySQL 8.0开源版100%兼容，客户业务从MySQL生态可以平滑迁移， 从其他数据库迁移也能使用MySQL生态的语法、工具，降低开发、学习成本。基于原生MySQL，在100%兼容的前提下进行大量内核优化，以及开源加固，开源生态，商用能力。</li>
+</ul>
+<hr>
+<p><strong>Aurora架构</strong><br><img src="/images/Aurora%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="Aurora"></p>
+<ul>
+<li><p>主数据库实例 – 支持读取和写入操作，并执行针对集群卷的所有数据修改。每个 Aurora 数据库集群均有一个主数据库实例。</p>
+</li>
+<li><p>Aurora 副本 – 连接到同一存储卷作为主数据库实例并仅支持读取操作。除主数据库实例之外，每个 Aurora 数据库集群最多可拥有 15 个 Aurora 副本。通过将 Aurora 副本放在单独的可用区中维护高可用性。当主数据库实例不可用时，Aurora 自动故障转移到 Aurora 副本。您可以为 Aurora 副本指定故障转移优先级。Aurora 副本还可以从主数据库实例分载读取工作负载。</p>
+</li>
+</ul>
+<hr>
+<p><strong>OceanBase架构</strong><br><img src="/images/OceanBase%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="OceanBase"></p>
+<hr>
+<p><strong>TDSQL架构</strong></p>
+<p><img src="/images/TDSQL-C%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="TDSQL-C"></p>
+<ul>
+<li><p>一写多读<br>TDSQL-C MySQL 版，一个集群中包含一个主节点和最多15个只读节点。主节点处理读写请求，只读节点仅处理读请求。</p>
+</li>
+<li><p>计算与存储分离<br>TDSQL-C MySQL 版采用计算与存储分离的设计理念，满足公共云计算环境下根据业务发展弹性扩展集群的刚性需求。数据库的计算节点（Database Engine Server）仅存储元数据，而将数据文件、Redo Log 等存储于远端的存储节点（Database Storage Server）。各计算节点之间仅需同步 Redo Log 相关的元数据信息，极大降低了主节点和只读节点间的复制延迟，而且在主节点故障时，可快速拉起新节点实现平滑替换。</p>
+</li>
+<li><p>自动读写分离<br>自动读写分离是 TDSQL-C MySQL 版提供的一个透明、高可用、自适应的负载均衡能力。通过配置数据库代理地址，SQL 请求自动转发到 TDSQL-C MySQL 版的各个节点，提供聚合、高吞吐的并发 SQL 处理能力。</p>
+</li>
+<li><p>高速链路互联<br>支持全链路 RDMA（Remote Direct Memory Access）传输，即将数据直接从一台计算机的内存传输到另一台计算机，无需双方操作系统的介入，进一步优化了关键路径的系统性能，降低请求延迟，使 I&#x2F;O 性能不再成为瓶颈，存储的多个副本之间也采用 RDMA 网络。</p>
+</li>
+<li><p>共享分布式存储<br>多个计算节点共享一份数据，而不是每个计算节点都存储一份数据，极大降低了用户的存储成本。基于全新打造的分布式块存储和文件系统，存储容量可以在线平滑扩展，不会受到单个数据库服务器的存储容量限制，可承载 PB 级别的数据规模。</p>
+</li>
+<li><p>数据多副本强一致<br>数据库存储节点的数据采用多副本形式，确保数据的可靠性，并通过多副本强一致策略保证数据的一致性。数据文件采用三副本强一致，保证数据可靠性，计费仅按照“单副本”数据量统计。</p>
+</li>
+</ul>
+<p><strong>NOTE</strong><br>部分资料来自各厂商官网及网络，侵删</p>
+]]></content>
+      <categories>
+        <category>技术杂谈</category>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>database</tag>
       </tags>
   </entry>
 </search>
