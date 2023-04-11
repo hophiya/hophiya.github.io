@@ -252,6 +252,17 @@
       </tags>
   </entry>
   <entry>
+    <title>开篇语</title>
+    <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>凡尘拾萃</category>
+      </categories>
+      <tags>
+        <tag>闲谈</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GaussDB初识</title>
     <url>/2023/04/10/database/GaussDB/</url>
     <content><![CDATA[<p>TDSQL架构</p>
@@ -265,14 +276,16 @@
       </tags>
   </entry>
   <entry>
-    <title>开篇语</title>
-    <url>/2022/12/17/%E5%BC%80%E7%AF%87%E8%AF%AD/</url>
-    <content><![CDATA[]]></content>
+    <title>PolarDB架构</title>
+    <url>/2023/04/11/database/PolarDB/</url>
+    <content><![CDATA[<p>PolarDB架构</p>
+<img src="/.io//04/11/database/PolarDB/PolarDB-MySQL.png" class title="a">]]></content>
       <categories>
-        <category>凡尘拾萃</category>
+        <category>技术杂谈</category>
+        <category>数据库</category>
       </categories>
       <tags>
-        <tag>闲谈</tag>
+        <tag>database</tag>
       </tags>
   </entry>
   <entry>
