@@ -79,6 +79,7 @@ $ brew install node
 ```
 $ npx hexo init <folder_name>
 
+到hexo目录下
 $ cd <folder_name>
 
 $ npm install
@@ -141,7 +142,7 @@ $ hexo deploy
 ```
 后续有新的博文更新或者是配置变更，都通过重复本步骤来部署到 GitHub Pages 中。
 
-## 启用 GitHub Pages 服务在 
+## 启用 GitHub Pages 服务 
 GitHub 上打开<你的GitHub用户名>.github.io项目，点击Settings，再点击Pages，选择master分支后点击Save。
 
 启用配置后，可能需要稍等一段时间（半小时左右），GitHub 才会刷新CDN缓存。
@@ -349,6 +350,13 @@ vim source/_data/post-body-end.njk
 ```
 post_asset_folder: true
 ```
+### 添加图片
+安装插件：
+```
+npm install hexo-asset-img --save
+npm install hexo-asset-image --save
+```
+图片保存到博客同名文件夹中
 
 
 ### 博文添加更新时间
@@ -504,7 +512,15 @@ git push origin source
 
 新建博文:
 ```
-hexo new "文章题目"
+hexo new post -p dir/title
+```
+其中：
+dir：子目录名称
+titile：文章标题
+如：
+```
+hexo n -p database/云数据库架构对比 "云数据库架构对比"
+
 ```
 
 给文章添加分类和标签:
@@ -574,5 +590,9 @@ git push origin source
 [使用git分支保存hexo博客源码到github](https://zhuanlan.zhihu.com/p/71544809)
 
 [Hexo+GitHub搭建个人博客，实现云端编辑、一键发文](https://www.jianshu.com/p/cafbaec21a2a)
+[Hexo新建文章时直接将页面放到子目录下](https://www.mingdao.me/Hexo/create-post-under-subfolder/)
+[Hexo 添加图片——不用插件，超简单](https://blog.csdn.net/Miracle_ps/article/details/114791335)
+
+
 
 一并感谢
